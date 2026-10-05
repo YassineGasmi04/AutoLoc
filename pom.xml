@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>tn.esprit</groupId>
-    <artifactId>AutoLoc</artifactId>
+    <artifactId>autoloc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>AutoLoc</name>
-    <description>AutoLoc</description>
+    <name>autoloc</name>
+    <description>autoloc</description>
     <url/>
     <licenses>
         <license/>
@@ -48,11 +48,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
