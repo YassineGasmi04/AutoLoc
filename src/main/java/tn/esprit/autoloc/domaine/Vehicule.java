@@ -8,7 +8,7 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.util.List;
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 @Table(name = "vehicule")
 @Getter
@@ -52,8 +52,11 @@ public class Vehicule {
         inverseJoinColumns = @JoinColumn(name = "id_equipement")
     )
     private List<equipement> equipements;
+    @JsonIgnore
     @OneToMany(mappedBy = "vehicule")
     private List<maintenance> maintenances;
+
+    @JsonIgnore
     @OneToMany(mappedBy = "vehicule")
     private List<reservation> reservations;
 

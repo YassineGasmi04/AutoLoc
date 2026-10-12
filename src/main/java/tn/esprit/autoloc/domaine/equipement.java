@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "equipement")
@@ -21,6 +22,7 @@ public class equipement {
     @Column(nullable = false, length = 100)
     private String libelle;
 
+    @JsonIgnore
     @ManyToMany(mappedBy = "equipements")
     private java.util.List<Vehicule> vehicules;
 }
