@@ -80,4 +80,5 @@ public class VehiculeController {
     public List<Vehicule> getByMarqueDisponible(@PathVariable String marque){
         return VehiculeService.getByMarqueDisponible(marque);
     }
+
 }

@@ -130,4 +130,5 @@ public class VehiculeService implements IvehiculeService {
     public List<Vehicule> getByMarqueDisponible(String marque) {
         return vRepo.findByMarqueAndStatut(marque, StatutVehicule.DISPONIBLE);
     }
+
 }

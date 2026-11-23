@@ -24,4 +24,5 @@ public interface IvehiculeService {
     List<Vehicule> getByMarqueContient(String marque);
     List<Vehicule> getTarifSup100();
     List<Vehicule> getByMarqueDisponible(String marque);
+
 }
